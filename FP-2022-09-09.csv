@@ -1,0 +1,44 @@
+id,title,description,preconditions,postconditions,tags,priority,severity,type,behavior,automation,status,is_flaky,layer,steps_type,steps_actions,steps_result,steps_data,milestone_id,milestone,suite_id,suite_parent_id,suite,suite_without_cases
+,,,,,,,,,,,,,,,,,,,,1,,Test,1
+1,"Login sukses","Login sukses","* User belum login
+* User sudah mempunyai akun","Redirect ke dashboard",,high,critical,security,undefined,is-not-automated,actual,no,api,classic,"1. Membuka web
+2. Input field
+
+* Username
+* Password
+3. Klik tombol login
+","1. Tampil web Orange HRM
+2. 
+3. Redirect ke dashboard Orange HRM
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. 
+3. 
+",,,1,,Test,
+2,"Login gagal","Login gagal","* User belum login
+* User sudah mempunyai akun shopee","Tampil notif Invalid credentials",,high,critical,security,undefined,is-not-automated,actual,no,api,classic,"1. Membuka web Orange HRM
+2. Input field
+
+* Username
+* Password
+","1. Tampil web Orange HRM
+2. * Tampil notif username/password salah
+* Stay pada halaman log in
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. 
+",,,1,,Test,
+3,"Registrasi Employee","Registrasi Employee berhasil","Belum ada data employee","Redirect halaman personal details",,medium,normal,functional,undefined,is-not-automated,actual,no,unknown,classic,"1. Masuk menu PIM
+2. Klik tombol Add
+3. Input data pada field dan save
+
+* First Name
+* Middle name
+* Last Name
+","1. Tampil halaman PIM
+2. Redirect page Add employee
+3. Berhasil add employee baru
+Redirect ke halaman menu PIM
+Tampil notif success
+","1. 
+2. 
+3. 
+",,,1,,Test,
